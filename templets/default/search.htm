@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta name="Generator"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="keywords" content="{dede:global.cfg_keywords/}">
+	<meta name="description" content="{dede:global.cfg_description/}">
+   	<title>搜索-{dede:global.cfg_webname/}</title>      
+    <link rel="shortcut icon" href="{dede:global.cfg_basehost/}/favicon.ico" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/index.css">
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='{dede:global.cfg_templets_skin/}/js/jquery.lazyload.js'></script>
+    <script type="text/javascript">
+        $(function(){
+            $('img[data-original]').lazyload({effect:"fadeIn"});
+        })
+    </script>
+</head>
+<body>
+{dede:include filename='head.htm'/}
+    <div class="cover-page-list fl wfs bcf2">
+               <div class="cover-page-wrapper">
+            <div class="search-lists fl wfs mt20">
+                                  <b class="fl">搜索&nbsp;<font style="color:#B90404;">{dede:global name='keyword' function='RemoveXSS(@me)'/}</font>&nbsp;结果</b>
+            </div>
+        </div>
+        <div class="cover-page-wrapper">
+            <div class="boutique fl" style="width: 1220px;">
+                <ul class="items fl wfs">
+               					{dede:list titlelen='40' infolen='60'}
+                                   <li class="items-li">
+                                      <a href="[field:arcurl/]" target="_blank" title="">
+                                        <img class="goodsimg" data-original="[field:litpic/]" src="[field:litpic/]" alt="" style="display: inline;">
+                                      </a>
+                                      <b class="title"><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></b>
+                                      <span class="description">
+                                        <a target="_blank" title="">[field:typeid function="GetTopTypename(@me)" /] </a>
+                                        -
+                                        <a href="[field:typeurl/]" title="">[field:typename/]</a>
+                                      </span>
+                                  </li>
+                               	{/dede:list}
+                                                                                                                            
+               </ul>
+            </div>
+<div class="fl wfs">
+        <ul class="pagination pages">
+             {dede:pagelist  listsize='4'/}
+        </ul>
+</div>
+<div style="clear:both;"></div>            
+                        
+        </div>
+            </div>
+{dede:include filename='footer.htm'/}
+</body>
+</html>

@@ -1,0 +1,1494 @@
+@charset "UTF-8";
+/*
+ * 基层 css---四大频道可以公用
+ * jiao
+ * 2014-08-27
+ */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin:0;
+    padding:0;
+}
+a:active,
+a:focus,
+a {
+    outline: none;
+}
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    width: auto;
+    min-width: 1210px;
+    background-color: transparent;
+}
+li {
+    list-style-type: none;
+}
+.clear { clear: both; }
+.fl { float: left; }
+.fr { float: right; }
+.fz12 { font-size: 12px; }
+.wfs { width: 100%; }
+/*
+ * 公用 css---只有关于我们频道可以公用
+ * jiao
+ * 2014-08-27
+ */
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+.w900 {
+    *width: 900px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+    background-color: #fff;
+}
+.w920 {
+    *width: 920px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    background-color: #fff;
+}
+.demo {
+    width: 900px;
+    overflow: hidden;
+}
+.demo-two {
+    width: 920px;
+    overflow: hidden;
+}
+.w940 {
+    width: 940px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mt70 {
+    margin-top: 70px;
+}
+.module {
+    background-color: #F2F2F2;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-banner.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/*新闻中心图片 */
+.module1 {
+    background-color: #F2F2F2;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/news-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/* 合作伙伴图片*/
+.module2 {
+    background-color: #F2F2F2;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/parter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/*办公环境图片*/
+.module-office {
+    background-color: #F2F2F2;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-environment.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+/*办公环境图片*/
+.module-flink {
+    background-color: #F2F2F2;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-flink.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.about-index .middle dt a,
+.about-index .middle dd span,
+.about-index .right .a1 i,
+.about-index .right .a2,
+.about-article .article-nav .share a,
+.about-contact .address a,
+.about-details .slogan i,
+.about-details .service-items li,
+.about-staffs ul li i {
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-us-sprites.png);
+    background-repeat: no-repeat;
+}
+.about-history .content span.circle-red,
+.about-history .content span.circle-pink,
+.about-history .content span.circle-green,
+.about-history .content span.circle-blue,
+.about-history .content span.circle-brown,
+.about-history .content span.circle-deepblue,
+.about-history .content span.circle-purple,
+.about-history .content p i,
+.about-history .content b,
+.about-news .news-list span,
+.back-top {
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-us-sprites-2.png);
+    background-repeat: no-repeat;
+}
+/*头部 css*/
+.head .logo {
+    float: left;
+    margin-top: 20px;
+}
+.head .nav a {
+    float: left;
+    *margin-left: 30px;
+    padding: 26px 5px;
+    color: #333;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #fff;
+}
+.head .nav a:hover {
+    *border-top-color: #FC7878;
+    text-decoration: none;
+}
+.head .nav a.nav-now {
+    border-top-color: #FC7878;
+}
+/*中间导航 css*/
+.subnav {
+    height: 55px;
+    margin-top: 165px;
+    background-color: #fff;
+}
+.subnav a {
+    float: left;
+    padding-left: 50px;
+    padding-right: 49px;
+    font-size: 16px;
+    line-height: 50px;
+    color: #333;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+.subnav a.subnav-now {
+    color: #FC7878;
+    border-bottom-color: #FC7878;
+}
+.subnav a:hover {
+    color: #FC7878;
+    text-decoration: none;
+    *border-bottom-color: #FC7878;
+}
+/*当前位置 css*/
+.place {
+    margin-top: 10px;
+    padding-top: 15px;
+    color: #888;
+    background-color: #fff;
+}
+.place p {
+    margin-right: 40px;
+}
+.place a {
+    color: #888;
+}
+/*分页 css*/
+.pages li a {
+    float: left;
+    margin-left: 5px;
+    color: #333;
+    background-color: #F5F5F5;
+    border: 0;
+}
+.pages li.disabled a {
+    background-color: #F5F5F5;
+}
+.pages li a:hover {
+    color: #FE5F56;
+}
+.pages li.active a {
+    background-color: #FE5F56;
+    border: 0;
+}
+.pages li.active a span {
+    background-color: #FE5F56;
+}
+.pages li.active a:hover {
+    background-color: #F05A50;
+}
+/*回到顶部 css*/
+.back-top {
+    position: fixed;
+    left: 50%;
+    margin-left: 490px;
+    bottom: 20%;
+    display: none;
+    width: 52px;
+    height: 50px;
+    background-position: 0 -378px;
+}
+/*底部 css*/
+.foot {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    text-align: center;
+    border-top: 5px solid #E4E4E4;
+}
+.foot p {
+    line-height: 25px;
+}
+.foot p a {
+    padding-right: 5px;
+    color: #333;
+}
+.foot p a:hover {
+    color: #FC7878;
+    text-decoration: none;
+}
+/* 以下就是--关于我们--频道不同页面的专属css */
+
+/*
+ * 关于我们首页专属模块
+ * jiao
+ * 2014-08-28
+ */
+.about-index {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #F2F2F2;
+}
+.about-index .left,
+.about-index .middle,
+.about-index .right {
+    background-color: #fff;
+    border-top: 5px solid #FF9D9D;
+}
+/*mid-about css*/
+.about-index .left {
+    width: 280px;
+    padding-bottom: 20px;
+}
+.about-index .left b {
+    display: block;
+    padding-left: 16px;
+    height: 42px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 42px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.about-index .left img {
+    margin-bottom: 15px;
+}
+.about-index .left p {
+    width: 250px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding-bottom: 15px;
+    line-height: 25px;
+    color: #555;
+    border-bottom: 1px dotted #D5D5D5;
+}
+.about-index .left p a {
+    color: #333;
+}
+.about-index .left p a:hover {
+    color: #FF9D9D;
+}
+.about-index .left strong {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FF9D9D;
+    text-align: center;
+}
+.about-index .left div {
+    padding-bottom: 19px;
+    text-align: center;
+}
+.about-index .left div span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.about-index .left div span a{
+	color:#333;
+}
+.about-index .left div span a:hover{
+	color:#ff9d9d;
+}
+.about-index .left a.read-more{
+    margin-left: 87px;
+    padding: 5px 25px;
+    background-color: #FF9D9D;
+    border: 0;
+    border-radius: 0;
+}
+.about-index .left a.read-more:active,
+.about-index .left a.read-more:focus,
+.about-index .left a.read-more {
+    outline: none;
+}
+.about-index .left a.read-more:hover {
+    background-color: #E58E8E;
+}
+/*mid-news css*/
+.about-index .middle {
+    width: 400px;
+    margin-left: 10px;
+    padding-bottom: 28px;
+	height:380px;
+}
+.about-index .middle dt {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 42px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.about-index .middle dt span {
+    float: left;
+    margin-left: 15px;
+}
+.about-index .middle dt a {
+    float: right;
+    margin-right: 15px;
+    padding-right: 10px;
+    font-weight: normal;
+    color: #FFACAC;
+    background-position: 43px 18px;
+    *background-position: 43px 19px;
+}
+.about-index .middle dd {
+    width: 360px;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+.about-index .middle dd.dd {
+    border-bottom: 1px dotted #D8D8D8;
+}
+.about-index .middle dd span {
+    float: left;
+    width: 65px;
+    padding-bottom: 55px;
+    font-size: 22px;
+    background-position: -50px 43px;
+}
+.about-index .middle dd div {
+    float: right;
+    width: 280px;
+}
+.about-index .middle dd div a {
+    display: block;
+    line-height: 25px;
+    color: #FF9D9D;
+}
+.about-index .middle dd div strong {
+    font-weight: normal;
+    line-height: 25px;
+    color: #555;
+}
+/*mid-video css*/
+.about-index .right {
+    width: 280px;
+    *width: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 37px;
+}
+.about-index .right h4 {
+    font-size: 16px;
+    line-height: 65px;
+}
+.about-index .right .a1 {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 140px;
+}
+.about-index .right .a1 img {
+    width: 240px;
+    height: 140px;
+}
+.about-index .right .a1 span {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    border-radius: 20px;
+}
+.about-index .right .a1 i {
+    position: absolute;
+    left: 104px;
+    top: 54px;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-position: 13px -16px;
+    border-radius: 16px;
+}
+.about-index .right b {
+    margin-top: 10px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #555;
+}
+.about-index .right .a2 {
+    width: 100px;
+    height: 30px;
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #fff;
+    text-indent: 15px;
+    background-color: #3F4955;
+    background-position: 73px -49px;
+}
+.about-index .right .a2:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #313940;
+}
+/*首页大图切换 css*/
+.about-index-slide .border {
+    position: relative;
+    overflow: hidden;
+}
+.about-index-slide .center {
+    width: 1210px;
+    height: 450px;
+    margin: 0 auto;
+}
+.about-index-slide .center .relative {
+    position: relative;
+    height: 450px;
+}
+.about-index-slide .center .relative .location {
+    position: absolute;
+    left: -355px;
+}
+.about-index-slide .center .relative .location .hidden-beyond {
+    position: relative;
+    width: 1920px;
+    height: 450px;
+    overflow: hidden;
+}
+.about-index-slide .center .items {
+    position: absolute;
+    top: 0;
+    width: 20000px;
+}
+.about-index-slide .center .items li {
+    float: left;
+    width: 1920px;
+    height: 450px;
+}
+.about-index-slide .center .items li a {
+    display: block;
+    width: 1920px;
+    height: 450px;
+    background-repeat: no-repeat;
+}
+.about-index-slide .center .items li a img {
+    width: 1920px;
+    height: 450px;
+}
+.about-index-slide .icons {
+    position: absolute;
+    left: 0;
+    top: 480px;
+    padding-top: 15px;
+}
+.about-index-slide .icons .box {
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: -15px;
+}
+.about-index-slide .icons .box span {
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/circle-slide.png);
+    background-repeat: no-repeat;
+    background-position: 0 -16px;
+}
+.about-index-slide .icons .box span.now {
+    background-position: 0 0;
+}
+/*
+ * 关于我们-文章-专属模块
+ * jiao
+ * 2014-08-28
+ */
+/*about-article css*/
+.about-article .title {
+    font-size: 18px;
+    line-height: 30px;
+    color: #FC7878;
+    text-align: center;
+}
+.about-article .date {
+    margin-top: 10px;
+    color: #ABABAB;
+    text-align: center;
+}
+.about-article .content {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px dotted #ddd;
+    border-bottom: 1px dotted #ddd;
+}
+.about-article .content .p1,
+.about-article .content p {
+    margin-bottom: 15px;
+    line-height: 25px;
+    color: #666;
+}
+.about-article .content img,
+.about-article .content p img {
+    max-width: 900px;
+}
+.about-article .content .p2 {
+    text-align: center;
+}
+.about-article .article-nav {
+    position: relative;
+    margin-top: 20px;
+}
+.about-article .article-nav .prev,
+.about-article .article-nav .next {
+    line-height: 25px;
+}
+.about-article .article-nav .prev,
+.about-article .article-nav .next,
+.about-article .article-nav .prev a,
+.about-article .article-nav .next a {
+    color: #FC7878;
+}
+.about-article .article-nav .share {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.about-article .article-nav .share span {
+    float: left;
+    color: #FC7878;
+}
+.about-article .article-nav .share a {
+    float: left;
+    width: 26px;
+    height: 25px;
+    margin-left: 10px;
+}
+.about-article .article-nav .share .a1 {
+    background-position: -74px -44px;
+}
+.about-article .article-nav .share .a2 {
+    background-position: -74px -76px;
+}
+/*
+ * 关于我们-联系我们-专属模块
+ * jiao
+ * 2014-08-28
+ */
+.about-contact .company-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.about-contact .slogan,
+.about-contact .p1 {
+    margin-top: 10px;
+    line-height: 15px;
+    color: #666;
+}
+.about-contact .phone,
+.about-contact .email {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #FC7878;
+}
+.about-contact .address {
+    width: 650px;
+    line-height: 42px;
+}
+.about-contact .address span {
+    float: left;
+}
+.about-contact .address a {
+    float: right;
+    width: 115px;
+    height: 30px;
+    text-indent: -9999px;
+    background-position: 0 -110px;
+}
+.about-contact .map {
+    margin-top: 20px;
+}
+/*
+ * 关于我们-详细页面-专属模块
+ * jiao
+ * 2014-08-29
+ */
+.about-details .msg {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-details-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: right 40px;
+}
+.about-details .msg  p {
+    margin-top: 10px;
+    width: 510px;
+    line-height: 25px;
+    color: #555;
+}
+.about-details .description {
+    margin-top: 50px;
+    line-height: 25px;
+    color: #555;
+}
+.about-details .slogan {
+    position: relative;
+    *width: 858px;
+    margin-top: 35px;
+    padding: 10px 20px;
+    line-height: 25px;
+    color: #FC8383;
+    border: 1px solid #ddd;
+}
+.about-details .slogan i {
+    position: absolute;
+    left: 30px;
+    top: -12px;
+    width: 23px;
+    height: 12px;
+    background-position: 0 -158px;
+}
+.about-details .main-business,
+.about-details .service-advantage {
+    margin-top: 30px;
+    color: #FC8383;
+}
+.about-details .goal {
+    margin-top: 10px;
+}
+.about-details .items li {
+    float: left;
+    width: 285px;
+    margin-top: 30px;
+    margin-right: 22px;
+    background-repeat: no-repeat;
+    background-position: center 40px;
+}
+.template-sale { background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/template-sale.png); }
+.site-made { background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/site-made.png); }
+.mobile-mail { background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/mobile-mail.png); }
+.template-up { background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/template-up.png); }
+.second-develope { background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/second-develope.png); }
+.more-business { background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/more-business.png); }
+.about-details .items li b {
+    display: block;
+    font-weight: normal;
+    text-align: center;
+}
+.about-details .items li p {
+    *width: 255px;
+    height: 105px;
+    *height: 80px;
+    margin-top: 190px;
+    padding-top: 22px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 25px;
+    color: #fff;
+}
+.about-details .items .template-sale p {
+    background-color: #F8A2BD;
+}
+.about-details .items .site-made p {
+    background-color: #52C4E6;
+}
+.about-details .items .mobile-mail p {
+    background-color: #1BBD9E;
+}
+.about-details .items .template-up p {
+    background-color: #2FCC73;
+}
+.about-details .items .second-develope p {
+    background-color: #E84C3D;
+}
+.about-details .items .more-business p {
+    background-color: #FCC800;
+}
+.about-details .service-items li {
+   float: left;
+   width: 440px;
+   height: 120px;
+   *width: 305px;
+   *height: 80px;
+   margin-right: 20px;
+   margin-top: 20px;
+   padding-top: 20px;
+   padding-right: 30px;
+   padding-bottom: 20px;
+   padding-left: 105px;
+   background-color: #F6F6F6;
+}
+.class-brand {
+    background-position: 20px -245px;
+}
+.team-experience {
+    background-position: 20px -373px;
+}
+.exquisite-excellence {
+    background-position: 20px -496px;
+}
+.service-guarantee {
+    background-position: 20px -645px;
+}
+.template-quality {
+    background-position: 20px -781px;
+}
+.micro-channel-mail {
+    background-position: 20px -934px;
+}
+.mobile-terminal {
+    background-position: 20px -1064px;
+}
+.plug-develop {
+    background-position: 20px -1215px;
+}
+.massive-resource {
+    background-position: 20px -1321px;
+}
+.geography-advantage {
+    background-position: 20px -1483px;
+}
+.about-details .service-items li strong {
+    font-size: 20px;
+}.about-details .service-items li span {
+	font-size: 22px;
+	font-weight:500;
+}
+.about-details .service-items li p {
+	margin-top:10px;
+    line-height: 20px;
+}
+/*
+ * 关于我们-发展历程-专属模块
+ * jiao
+ * 2014-08-28
+ */
+.about-history {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+.about-history .content {
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-history-grey.png);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+.about-history .content span.circle-red,
+.about-history .content span.circle-pink,
+.about-history .content span.circle-green,
+.about-history .content span.circle-blue,
+.about-history .content span.circle-brown,
+.about-history .content span.circle-deepblue,
+.about-history .content span.circle-purple {
+    float: left;
+    width: 83px;
+    height: 83px;
+    margin-left: 447px;
+    line-height: 83px;
+    color: #fff;
+    text-align: center;
+}
+.about-history .content span.circle-red {
+    margin-bottom: 30px;
+    background-position: 0 0;
+}
+.about-history .content span.circle-red2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 0;
+}
+.about-history .content span.circle-red2 i {
+    display: block;
+    margin-top: 28px;
+    font-style: normal;
+    line-height: 18px;
+}
+.about-history .content span.circle-pink {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: 0 -91px;
+}
+.about-history .content span.circle-green {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: -68px -566px;
+}
+.about-history .content span.circle-blue {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: -66px -360px;
+}
+.about-history .content span.circle-brown {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: -67px -681px;
+}
+.about-history .content span.circle-deepblue {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: -67px -465px;
+}
+.about-history .content span.circle-purple {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-position: -67px -254px;
+}
+.about-history .content div {
+    position: relative;
+}
+.about-history .content p {
+    position: relative;
+    width: 345px;
+    *width: 339px;
+    height: 70px;
+    *height: 60px;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 1px;
+    padding-left: 18px;
+    line-height: 25px;
+    color: #fff;
+}
+.about-history .content p.yellow {
+    background-color: #FCC800;
+}
+.about-history .content p.green {
+    background-color: #92D206;
+	white-space:no-wrap;
+}
+.about-history .content p.blue {
+    background-color: #52C4E6;
+}
+.about-history .content p.red {
+    background-color: #FC7878;
+}
+.about-history .content p.purple {
+    background-color: #CA8ED3;
+}
+.about-history .content p.deepblue {
+    background-color: #75C4BE;
+}
+.about-history .content p.brown {
+    background-color: #D48D7C;
+}
+.about-history .content p.brown {
+    background-color: #D48D7C;
+}
+
+.about-history .content p.left {
+    margin-left: 77px;
+}
+.about-history .content p.right {
+    margin-right: 77px;
+}
+.about-history .content p a {
+    position: absolute;
+    right: 18px;
+    bottom: 10px;
+    color: #fff;
+}
+.about-history .content p i {
+    position: absolute;
+    top: 25px;
+    width: 14px;
+    height: 23px;
+}
+.about-history .content p.left i {
+    right: -14px;
+}
+.about-history .content p.right i {
+    left: -14px;
+}
+.about-history .content p i.triangle-yellow-l {
+    background-position: -146px 0;
+}
+.about-history .content p i.triangle-green-l {
+    background-position: -130px 0;
+}
+.about-history .content p i.triangle-blue-l {
+    background-position: -146px -50px;
+}
+.about-history .content p i.triangle-purple-l {
+    background-position: -146px -87px;
+}
+.about-history .content p i.triangle-red-l {
+    background-position: -146px -177px;
+}
+.about-history .content p i.triangle-brown-l {
+    background-position: -146px -144px;
+}
+.about-history .content p i.triangle-deepblue-l {
+    background-position: -146px -117px;
+}
+.about-history .content p i.triangle-green-r {
+    background-position: -114px 0;
+}
+.about-history .content p i.triangle-blue-r {
+    background-position: -98px 0;
+}
+.about-history .content p i.triangle-yellow-r {
+    background-position: -126px -50px;
+}
+.about-history .content p i.triangle-purple-r {
+    background-position: -127px -87px;
+}
+.about-history .content p i.triangle-red-r {
+    background-position: -126px -177px;
+}
+.about-history .content p i.triangle-brown-r {
+    background-position: -128px -145px;
+}
+.about-history .content p i.triangle-deepblue-r {
+    background-position: -128px -117px;
+}
+
+.about-history .content b {
+    position: absolute;
+    left: 482px;
+    top: 27px;
+    width: 16px;
+    height: 16px;
+}
+.about-history .content b.circle-yellow {
+    background-position: -123px -26px;
+}
+.about-history .content b.circle-grey {
+    background-position: -100px -26px;
+}
+.about-history .content b.circle-blue {
+    background-position: -144px -26px;
+}
+/*
+ * 关于我们-新闻-专属模块
+ * jiao
+ * 2014-08-28
+ */
+.about-news {
+    background-color: #fff;
+}
+.about-news .news-list {
+    width: 900px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px dotted #D1D1D1;
+}
+.about-news .news-list span {
+    float: left;
+    width: 65px;
+    margin-top: -3px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.about-news .news-list span.circle-yellow {
+    background-position: 10px -256px;
+}
+.about-news .news-list span.circle-blue {
+    background-position: 10px -176px;
+}
+.about-news .news-list div {
+    float: right;
+    width: 805px;
+}
+.about-news .news-list div h5 {
+    margin-bottom: 10px;
+}
+.about-news .news-list div h5 a {
+    font-size: 18px;
+    color: #FC8383;
+}
+.about-news .news-list div p {
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+}
+/*
+ * 关于我们-合作伙伴-专属模块
+ * jiao
+ * 2014-08-28
+ */
+.about-parter .description {
+    padding-bottom: 10px;
+    color: #FC7878;
+}
+.about-parter dl dt {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.about-parter dl dd {
+    float: left;
+    width: 207px;
+    height: 62px;
+    *width: 205px;
+    *height: 50px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #DDDDDD;
+}
+
+/*
+ * 关于我们-员工风采-专属模块
+ * jiao
+ * 2014-08-28
+ */
+.about-staffs ul li {
+    float: left;
+    width: 285px;
+    margin-bottom: 20px;
+    margin-right: 24px;
+}
+.about-staffs ul li img {
+    width: 285px;
+    height: 190px;
+}
+.about-staffs ul li b {
+    display: block;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+.about-staffs ul li b a {
+    color: #333;
+}
+.about-staffs ul li .video-a {
+    position: relative;
+    display: block;
+    width: 285px;
+    height: 190px;
+}
+.about-staffs ul li span {
+    position: absolute;
+    left: 123px;
+    top: 75px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.about-staffs ul li i {
+    position: absolute;
+    left: 127px;
+    top: 79px;
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-position: 13px -16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+/*
+ * 关于我们-工作环境
+ * jiao
+ * 2014-09-29
+ */
+.about-environment .work-environment {
+    width: 300px;
+    height: 310px;
+    margin-right: 10px;
+    background-color: #FF9D9D;
+}
+.about-environment .work-environment img,
+.about-environment .chamber img,
+.about-environment .rest img {
+    margin-left: 24px;
+    margin-top: 55px;
+}
+.about-environment .work-environment p,
+.about-environment .chamber p,
+.about-environment .rest p {
+    width: 255px;
+    margin-top: 45px;
+    margin-left: 25px;
+    line-height: 25px;
+    color: #fff;
+}
+.about-environment .chamber {
+    width: 300px;
+    height: 300px;
+    background-color: #80CD4B;
+}
+.about-environment .rest {
+    width: 300px;
+    height: 300px;
+    background-color: #58BDF0;
+}
+
+/*
+ * 关于我们-团队风采
+ * jiao
+ * 2014-09-29
+ */
+.about-staffs .day-tour-img {
+    width: 610px;
+    height: 300px;
+    margin-right: 10px;
+}
+.about-staffs .day-tour-text {
+    width: 300px;
+    *width: 260px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 34px;
+    color: #fff;
+    background-color: #FF9D9D;
+}
+.about-staffs .day-tour-text span {
+    display: block;
+    padding-top: 10px;
+}
+.about-staffs .day-tour-text p {
+    margin-top: 20px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+.about-staffs .basketball {
+    padding-bottom: 124px;
+    background-color: #80CD4B;
+}
+.about-staffs .other-events {
+    padding-bottom: 50px;
+    background-color: #EAB144;
+}
+.about-staffs .other-events div {
+    margin-top: 10px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+
+/*
+ * 关于我们-视频中心
+ * jiao
+ * 2014-09-29
+ */
+.about-staffs .video {
+    width: 980px;
+    margin-top: 10px;
+}
+.about-staffs .video-big-left {
+    width: 600px;
+    height: 400px;
+    *width: 580px;
+    *height: 380px;
+    padding: 10px;
+    background-color: #fff;
+}
+.about-staffs .video-text-right {
+    width: 370px;
+    height: 400px;
+    *width: 330px;
+    *height: 360px;
+    padding: 20px;
+    background-color: #fff;
+}
+.about-staffs .video-text-right h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    font-weight: bold;
+}
+.about-staffs .video-text-right .date {
+    line-height: 40px;
+    color: #888;
+}
+.about-staffs .video-text-right p {
+    padding-top: 10px;
+    line-height: 25px;
+    border-top: 1px dotted #ddd;
+    text-indent: 2em;
+}
+.about-staffs .video-slide {
+    position: relative;
+    height: 268px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+.about-staffs .video-slide .box {
+    position: relative;
+    top: 30px;
+    left: 75px;
+    width: 840px;
+    height: 218px;
+    overflow: hidden;
+}
+.about-staffs .video-slide .items {
+    width: 20000px;
+    position: absolute;
+    top: 0;
+}
+.about-staffs .video-slide .items li {
+    float: left;
+    width: 270px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.about-staffs .video-slide .items li img {
+    width: 270px;
+    height: 180px;
+}
+.about-staffs .video-slide .items li .title {
+    padding-top: 0;
+}
+.about-staffs .video-slide .items li .title a {
+    font-size: 16px;
+}
+.about-staffs .video-slide .items li .title a:hover {
+    color: #FC7878;
+    text-decoration: none;
+}
+.about-staffs .video-slide .video-icon-l,
+.about-staffs .video-slide .video-icon-r {
+    position: absolute;
+    top: 114px;
+    width: 21px;
+    height: 40px;
+    display: block;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.about-staffs .video-slide .video-icon-l {
+    left: 30px;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/video-l.png);
+}
+.about-staffs .video-slide .video-icon-r {
+    right: 30px;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/video-r.png);
+}
+/*
+ * 关于我们-法律条款
+ * jiao
+ * 2014-09-29
+ */
+ .module-legal-terms {
+    padding-top: 165px;
+    background-color: #fff;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/legal-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.legal-terms {
+    line-height: 25px;
+}
+.legal-terms .title {
+    color: #FC7878;
+    margin-top: 25px;
+}
+/*
+ * 关于我们-隐私政策
+ */
+ .module-privacy-terms {
+    padding-top: 165px;
+    background-color: #fff;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/privacy-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.legal-terms {
+    line-height: 25px;
+}
+.legal-terms .title {
+    color: #FC7878;
+    margin-top: 25px;
+}
+
+/*
+ * 关于我们-支付方式
+ * jiao
+ * 2014-09-29
+ */
+.module-payment {
+    padding-top: 165px;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/payment-bg.png);
+    background-position: center top;
+}
+.payment .title {
+    margin-top: 10px;
+    color: #FC7878;
+ }
+.payment .payment-table {
+    margin-top: 30px;
+}
+.payment .payment-table th {
+    height: 40px;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #F7F7F7;
+}
+.payment .payment-table td {
+    height: 87px;
+    font-size: 16px;
+    border-bottom: 1px dotted #DFDFDF;
+}
+.payment .payment-table .img {
+    padding-left: 20px;
+}
+.payment .payment-table .img img {
+    border: 1px solid #DFDFDF;
+}
+
+/*
+ * 关于我们-荣誉资质
+ * jiao
+ * 2014-09-29
+ */
+.about-honor .honor-item {
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/honor-bg.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+}
+.about-honor .honor-2013,
+.about-honor .honor-2012 {
+    margin-top: 50px;
+}
+.about-honor .honor-2014,
+.about-honor .honor-2013 {
+    padding-bottom: 20px;
+}
+.about-honor .honor-2012 {
+    background-image: none;
+}
+.about-honor .honor-item .left {
+   float: left;
+   width: 90px;
+   height: 30px;
+   font-weight: normal;
+   line-height: 30px;
+   text-align: center;
+   color: #fff;
+   background-color: #FC7878;
+}
+.about-honor .honor-item .right {
+    float: right;
+    width: 810px;
+}
+.about-honor .honor-item .right li {
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-honor .honor-item .right li strong {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 30px;
+    color: #7A7A7A;
+}
+/*
+ * 关于我们-友情链接诶
+ * jiao
+ * 2014-09-29
+ */
+.about-flink .flink-items li {
+    float: left;
+    width: 25%;
+    height: 48px;
+    *height: 47px;
+    line-height: 47px;
+    text-indent: 20px;
+    background-image: url(http://about.ecmoban.com/content/themes/ecmoban2014/images/about-left-curve.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-bottom: 1px dotted #ddd;
+}
+.about-flink .flink-items li a {
+    color: #333;
+}
+.about-flink .flink-items li a:hover {
+    color: #FC7878;
+}
+.flink-apply .left {
+    width: 515px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333;
+}
+.flink-apply h3.title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #FC7878;
+}
+.flink-apply .right {
+    width: 365px;
+    *width: 330px;
+    padding-left: 35px;
+    border-left: 1px dotted #D8D8D8;
+}
+.flink-apply .right div {
+    margin-top: 10px;
+}
+.flink-apply .right div p {
+    float: left;
+    width: 120px;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: right;
+}
+.flink-apply .right div p span.star-red{
+    color: #FC7878;
+}
+.flink-apply .right div input.text {
+    width: 200px;
+    *width: 180px;
+    height: 35px;
+    *height: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.flink-apply .right div input.submit {
+    margin-left: 125px;
+    *padding: 5px 10px;
+    background-color: #FC7878;
+    border:none;
+
+}
+.flink-apply .right div input.submit:hover {
+    background-color: #E36F6F;
+}
+.flink-apply .right div textarea {
+    width: 200px;
+    *width: 180px;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+

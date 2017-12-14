@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta name="Generator"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="keywords" content="{dede:global.cfg_keywords/}">
+	<meta name="description" content="{dede:global.cfg_description/}">
+   	<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>      
+    <link rel="shortcut icon" href="{dede:global.cfg_basehost/}/favicon.ico" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/index.css">
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+{dede:include filename='head.htm'/}
+    
+    <div class="cover-page-details fl wfs bcf2">
+        <div class="cover-page-wrapper">
+            <div class="place fz12" style="padding-left:20px;">您现在的位置：{dede:field name='position'/}{dede:field.title/}</div>            
+            <div class="details fl wfs" style="position:relative;">
+                
+                <div class="bdsharebuttonbox"  data-tag="share_1" style="right:100px;bottom:50px;*bottom: 55px; position:absolute;">
+                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                <a href="#" class="bds_more" data-cmd="more"></a>
+                </div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                      <div class="left fl">
+        <span class="up-down-btn j-up-down-btn up-btn"></span>
+        <div class="canvas">
+            <ul class="canvas-container j-canvas-container" style="top:0;">
+                <li class="canvas-container-li j-canvas-container-li now">
+                    <img src="{dede:field.litpic/}" title="" alt="{dede:field.title/}" />
+                </li>
+            </ul>
+        </div>
+        <span class="up-down-btn j-up-down-btn down-btn down-icon"></span>
+    </div>
+    <div class="mid fl">
+        <div class="mid-container fl">
+            <div class="j-details-mid-item details-mid-item" style="display:block;">
+                <img src="{dede:field.litpic/}" jqimg="{dede:field.litpic/}"  alt="">
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="right fr">
+                    <div class="discount-msg"><h3>{dede:field.title/}</h3></div>
+                    <div class="discount-msg-two" style="padding-bottom: 10px;">
+                     <p class="price" >原　价：<span style="text-decoration:line-through;">￥{dede:field.price/}元</span></p></br>
+                         <p class="price" id="ECS_GOODS_AMOUNT">优惠价：￥{dede:field.trueprice/}元</p>
+                    </div>
+                    <p class="make fl wfs">
+                   	<a href="{dede:field.tbk_link/}" class="make-cart fl" target="_blank">去购买</a>
+                    </p>
+                    <div class="offer j-offer">
+                        <span class="offer-give">织梦猫</span>
+                        <p class="offer-item offer-give j-offer-item">
+	                        <em></em>   
+	                        <a>加QQ群了解最新优惠活动</a>
+	                        <a href="http://shang.qq.com/wpa/qunwpa?idkey=e8a02d19ef5308c06cec3b01bf0f9b405fce21150f5c917fbf71e2e8ff844999" target="_blank">点击加入QQ群</a>
+	                    </p>
+                    </div>
+                </div>
+            </div>
+            </form>
+            <div class="content fl wfs" >
+                <div class="content-icons fl wfs" style="position:relative;">
+                	<div class="tips" style="left:0px;width:88px;"></div>
+                	<ul class="mainLeftNav">
+                    	<li class="cur">宝贝详情</li>
+                    </ul>
+                </div>
+                
+                <div class="content-item j-content-item content-package fl wfs" style="display:block;">
+                    <div class="desc fl wfs" style="margin-top:20px;">                           
+                    {dede:field.body/}
+                    </div>                
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    
+{dede:include filename='footer.htm'/}
+</body>
+</html>

@@ -1,0 +1,62 @@
+<div class="head fl wfs">
+    <div class="cover-page-wrapper">
+        <a class="fl" href="/"><img src="{dede:global.cfg_templets_skin/}/images/logo.png" title="dedecms模板 dedecms插件" alt="sdedecms模板 dedecms插件"></a>
+        <form id="searchForm" name="searchForm" method="get" action="/plus/search.php" onSubmit="return checkSearchForm()"  class="search-product fl">
+            <input type="hidden" name="kwtype" value="0" />
+            <input class="form-control search-box" name="q" autocomplete="off" type="text" id="keyword" value=""/>
+            <input class="submit" type="submit"  value="提交" style="border:none; cursor:pointer;"> 
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/utils.js"></script>
+<script type="text/javascript">
+    
+        <!--
+        function checkSearchForm()
+        {
+            if(document.getElementById('keyword').value)
+            {
+                return true;
+            }
+            else
+            {
+                alert("请输入搜索关键词！");
+                return false;
+            }
+        }
+        -->
+    
+</script>
+<script src="{dede:global.cfg_templets_skin/}/js/nav.js"></script>
+<div style="height: 48px;background-color: #323231;" class="fl wfs">
+    <div class="nav fl wfs j-nav">
+        <div class="cover-page-wrapper cover-page-wrapper2 clearfix">
+            <div class="nav-menus j-nav-menus fl">
+                <a class="handle" href=""><i></i>所有产品</a>
+                <div class="categorys j-categorys">
+                    <i class="category-trangle-bg"></i>
+                    {dede:channelartlist typeid='1,4,7,10'}
+                    <div class="categorys-box fl wfs" style="border-left:0;">
+                        <h4 class="title fl wfs">{dede:field.typename/}</h4><br>
+                        <dl class="dl-categorys-item fl wfs">
+                            {dede:channel type='sun'}
+                            <dd class="dd-categorys-item">
+                                <a target="_blank" href="[field:typeurl/]">[field:typename/]</a><br>
+                            </dd>
+                            {/dede:channel}
+                        </dl>
+                    </div>
+                    {/dede:channelartlist}
+                    
+                    <div class="categorys-concact">
+                        <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=48777104&amp;site=qq&amp;menu=yes" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/cover-page-service-2.png" />在线客服</a>
+                    </div>
+                </div>
+            </div>
+            <a class="channel  channel-now " href="/">首页<span></span></a>
+            {dede:channel type='top'  row='7' currentstyle="<a class='channel channel-now' href='~typelink~'  >~typename~<span></span></a>"}
+            <a class="channel " href="[field:typeurl/]"  >[field:typename/]<span></span></a>
+            {/dede:channel}
+        </div>
+    </div>
+</div>
